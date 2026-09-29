@@ -1,0 +1,29 @@
+# Copyright (c) 2026 SevenMatt. Todos os direitos reservados.
+# Licenciado sob os termos do arquivo LICENSE na raiz do projeto.
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linksentinel"
+version = "1.0.0"
+license = "LicenseRef-Proprietary"
+license-files = ["LICENSE"]
+description = "Ferramenta de análise e identificação de links maliciosos"
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.28",
+    "tldextract>=3.4",
+]
+
+[project.optional-dependencies]
+whois = ["python-whois>=0.8"]
+
+[project.scripts]
+# NOME DO COMANDO  ->  módulo:função
+linksentinel = "linksentinel.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["linksentinel*"]

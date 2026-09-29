@@ -1,0 +1,35 @@
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+*.whl
+
+# Cache do tldextract
+.tld_cache/
+linksentinel/.tld_cache/
+
+# PyInstaller
+*.spec
+dist/
+build/
+
+# Chaves e segredos
+.env
+*.key
+secrets.toml
+API_KEYS*
+
+# IDE / SO
+.vscode/
+.idea/
+*.swp
+.DS_Store
