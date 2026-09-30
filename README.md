@@ -30,4 +30,4 @@ pyinstaller --onefile --name linksentinel --collect-all tldextract linksentinel\
 
 # Install 
 pipx install linksentinel
-linksentinel https://link-suspeito.com
+linksentinel --version
