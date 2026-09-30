@@ -24,3 +24,10 @@ linksentinel "https://x.com" --json
 
 # Pular etapas lentas
 linksentinel "https://x.com" --no-whois --no-redirects
+
+# windows install
+pyinstaller --onefile --name linksentinel --collect-all tldextract linksentinel\cli.py
+
+# Install 
+pipx install linksentinel
+linksentinel https://link-suspeito.com
