@@ -3,7 +3,7 @@
 
 
 # Uso básico: nome da ferramenta + link
-linksentinel "https://dominio-suspeito.com/login"
+linksentinel https://dominio-suspeito.com/login
 
 # Vários links de uma vez
 linksentinel "http://bit.ly/abc" "http://1.2.3.4/payload.exe"
